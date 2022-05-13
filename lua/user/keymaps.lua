@@ -42,6 +42,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Remap move cursor to head and tail 
 keymap("n", "H", "^", opts)
 keymap("n", "L", "$", opts)
+keymap("v", "H", "^", opts)
+keymap("v", "L", "$", opts)
 
 
 -- Move text up and down
@@ -51,6 +53,8 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("v", "jk", "<ESC>", opts)
+keymap("t", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
